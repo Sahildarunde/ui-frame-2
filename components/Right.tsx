@@ -31,32 +31,32 @@ export default function Right(){
                 </div>
             </div>
 
-                    <div className='md:ml-16 mt-8 flex flex-col w-108 gap-5 '>
-                <div className="flex justify-between items-center w-full h-full ">
+                    <div className='md:ml-16 lg:mt-8  lg:w-108 gap-5 '>
+                <div className="flex justify-between items-center ">
                     <ToggleButton label="Office Tours" onToggle={handleToggle}/>
                     <h4>100%</h4> 
                 </div>
-                <div className="flex justify-between w-full h-full ">
+                <div className="flex justify-between items-center  ">
                     <ToggleButton label="Management Introdutory" onToggle={handleToggle}/>
                     <h4>20%</h4> 
                 </div>
-                <div className="flex justify-between w-full h-full ">
+                <div className="flex justify-between items-center">
                     <ToggleButton label="Work Tools" onToggle={handleToggle}/>
                     <h4>0%</h4> 
                 </div>
-                <div className="flex justify-between w-full h-full ">
+                <div className="flex justify-between items-center">
                     <ToggleButton label="Meet Your Colleagues" onToggle={handleToggle}/>
                     <h4>0%</h4> 
                 </div>
-                <div className="flex justify-between w-full h-full ">
+                <div className="flex justify-between items-center">
                     <ToggleButton label="Duties Journal" onToggle={handleToggle}/>
                     <h4>0%</h4> 
                 </div>
-                <div className="flex justify-between w-full h-full ">
+                <div className="flex justify-between items-center">
                     <ToggleButton label="Requests Handling" onToggle={handleToggle}/>
                     <h4>0%</h4> 
                 </div>
-                <div className="flex justify-between w-full h-full ">
+                <div className="flex justify-between items-center">
                     <ToggleButton label="Activity Tracker" onToggle={handleToggle}/>
                     <h4>0%</h4> 
                 </div>

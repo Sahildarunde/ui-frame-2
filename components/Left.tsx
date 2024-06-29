@@ -12,7 +12,7 @@ type LeftProps = {
 export default function Left({ selectedImage, onImageChange }: LeftProps) {
   return (
     <div>
-      <div className="p-4 h-screen flex flex-col md:flex-row gap-48  md:ml-16">
+      <div className="p-4 h-screen flex flex-col lg:flex-row   md:ml-16">
         <div>
           <h2 className='text-slate-500 m-2 font-semibold'>PROFILE IMAGE</h2>
           <div className='h-48 w-48 relative overflow-hidden mb-4 border border-slate-400 rounded-lg'>
@@ -51,7 +51,7 @@ export default function Left({ selectedImage, onImageChange }: LeftProps) {
             <h2 className='text-slate-500 m-4 font-semibold'>ROLE</h2>
             <Dropdown options={roles} label='Role' />
           </div>
-          <div className='md:ml-16 mt-5 md:mt-0 flex flex-col w-38'>
+          <div className='md:ml-1 mt-5 md:mt-0 flex flex-col w-38'>
             <h2 className='text-slate-500 m-4 font-semibold'>Team</h2>
             <Dropdown options={["Kate Middleton"]} label='HR' />
             <Dropdown options={["Kirk Mitrohin"]} label='Manager' />
