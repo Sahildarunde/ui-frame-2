@@ -9,7 +9,7 @@ type LeftProps = {
   onImageChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function Left({ setSelectedImage, selectedImage, onImageChange }: LeftProps) {
+export default function Left({ selectedImage, onImageChange }: LeftProps) {
   return (
     <div>
       <div className="p-4 h-screen flex flex-col md:flex-row gap-48 md:ml-16">
