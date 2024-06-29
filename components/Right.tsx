@@ -31,7 +31,7 @@ export default function Right(){
                 </div>
             </div>
 
-                    <div className='md:ml-16 lg:mt-8  lg:w-108 gap-5 '>
+                    <div className='md:ml-16 lg:mt-8 flex flex-col lg:w-108 gap-5 '>
                 <div className="flex justify-between items-center ">
                     <ToggleButton label="Office Tours" onToggle={handleToggle}/>
                     <h4>100%</h4> 

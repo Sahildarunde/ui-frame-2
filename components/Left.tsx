@@ -57,7 +57,7 @@ export default function Left({ selectedImage, onImageChange }: LeftProps) {
             <Dropdown options={["Kirk Mitrohin"]} label='Manager' />
             <Dropdown options={["Eugene Hummell"]} label='Lead' />
           </div>
-          <div className='mt-10 flex gap-2'>
+          <div className='mt-32 ml-12  flex gap-2'>
             <div className='px-5 bg-black py-2 text-white rounded cursor'>Save Changes</div>
             <div className='px-5 border border-black py-2 text-black  rounded cursor'>Cancel</div>
           </div>
