@@ -15,7 +15,7 @@ export default function PercentageSlider({ onChange }: PercentageSliderProps) {
   };
 
   return (
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 mt-28 md:mt-0">
       <input
         type="range"
         min="0"

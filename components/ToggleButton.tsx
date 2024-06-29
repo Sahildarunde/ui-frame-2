@@ -15,7 +15,7 @@ export default function ToggleButton({ label, onToggle }: ToggleButtonProps) {
   };
 
   return (
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 mt-56 md:mt-[-55px]">
       
       <button
         onClick={handleToggle}
@@ -30,7 +30,7 @@ export default function ToggleButton({ label, onToggle }: ToggleButtonProps) {
         />
       </button>
 
-      <span className="text-lg font-lg text-gray-700">{label}</span>
+      <span className="text-lg   font-lg text-gray-700">{label}</span>
     </div>
   );
 }

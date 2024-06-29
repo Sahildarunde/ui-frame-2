@@ -2,7 +2,7 @@
 
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
-import {useState} from 'react'
+import {ChangeEvent, useState} from 'react'
 import Main from '../components/Main'
 
 export default function Home() {
@@ -10,6 +10,15 @@ export default function Home() {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
+      if (event.target.files && event.target.files[0]) {
+      const imageFile = event.target.files[0];
+      setSelectedImage(URL.createObjectURL(imageFile));
+      }
   };
   return (
     <div className="flex">
@@ -25,11 +34,11 @@ export default function Home() {
           isSidebarOpen ? 'block' : 'hidden'
         } md:block w-1/4 md:w-1/12 bg-[#2e3440] h-screen fixed md:static z-40 md:z-auto`}
       >
-        <Sidebar />
+        <Sidebar selectedImage={selectedImage}/>
       </div>
 
 
-      <Main />
+      <Main selectedImage={selectedImage} handleImageChange={handleImageChange}/>
     </div>
   );
 }

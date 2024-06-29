@@ -1,8 +1,8 @@
-export default function Sidebar(){
+export default function Sidebar({selectedImage}: any){
     return (
-        <div className="flex flex-col justify-between h-full items-center">
+        <div className="flex flex-col justify-between md:w-1/12 h-screen bg-[#2e3440] fixed items-center">
             <div>
-                <div className="mt-16 text-white text-lg font-semibold mb-10">Logo</div>
+                <div className="mt-16 text-white text-lg font-semibold mb-10">HR</div>
                 <div className="flex flex-col gap-5">
                     <div className="h-10 w-10 flex justify-center items-center rounded-full"><Squares /></div>
                     <div className="h-10 w-10  flex justify-center items-center rounded-full"><Profile /></div>
@@ -13,7 +13,7 @@ export default function Sidebar(){
             </div>
             <div className="flex flex-col">
                 <div className="h-16 w-16 relative overflow-hidden rounded-full">
-                    <img className="absolute object-cover" src="./profilePic.jpeg" alt="" />
+                    <img className="absolute object-cover" src={selectedImage} alt="" />
                 </div>
                 <div className="h-16 w-16 flex justify-center items-center"><Shift /></div>
             </div>

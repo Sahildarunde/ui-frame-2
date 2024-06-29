@@ -13,7 +13,7 @@ export default function DateInputBox({ label, placeholder }: DateInputBoxProps) 
   };
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 mt-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
       <input
         type="date"
